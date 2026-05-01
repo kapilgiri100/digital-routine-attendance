@@ -1,0 +1,97 @@
+.take-attendance {
+    padding: 20px
+}
+
+@media (max-width: 768px) {
+    .take-attendance {
+        padding: 16px
+    }
+}
+
+.take-attendance h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #1f2937
+}
+
+@media (max-width: 768px) {
+    .take-attendance h3 {
+        font-size: 16px
+    }
+}
+
+.attendance-controls {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px
+}
+
+@media (max-width: 768px) {
+    .attendance-controls {
+        flex-direction: column;
+        gap: 8px
+    }
+}
+
+.no-class,
+.warning {
+    color: #ef4444;
+    margin-bottom: 12px
+}
+
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px
+}
+
+@media (max-width: 768px) {
+    .students-grid {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 8px
+    }
+}
+
+.student-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.student-btn.present {
+    background: #10b981;
+    color: #fff
+}
+
+.student-btn.absent {
+    background: #e5e7eb;
+    color: #374151
+}
+
+.attendance-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+@media (max-width: 768px) {
+    .attendance-footer {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch
+    }
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer
+}

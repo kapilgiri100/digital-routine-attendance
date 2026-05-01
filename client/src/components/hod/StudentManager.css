@@ -1,0 +1,46 @@
+.student-manager {
+    padding: 20px
+}
+
+.student-manager h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #1f2937
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 12px
+}
+
+.form-row input {
+    flex: 1;
+    min-width: 140px;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px
+}
+
+.form-row button {
+    padding: 8px 16px;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer
+}
+
+.item-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style: disc
+}
+
+.item-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    color: #111
+}

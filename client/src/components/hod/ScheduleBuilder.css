@@ -1,0 +1,263 @@
+.schedule-builder {
+  padding: 20px
+}
+
+.schedule-builder h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #1f2937
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  align-items: flex-end;
+}
+
+.form-row select {
+  flex: 1;
+  min-width: 140px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 140px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-row input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.form-row input:disabled {
+  background-color: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.teacher-select {
+  flex: 1;
+  min-width: 150px;
+}
+
+.subject-input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.form-row button {
+  padding: 8px 16px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.form-row button:hover {
+  background: #4338ca;
+}
+
+.form-row button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-save {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-save:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-save:disabled {
+  background: #9ca3af;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.btn-clear {
+  padding: 10px 24px;
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-clear:hover {
+  background: #dc2626;
+}
+
+.btn-clear:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.session-config {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.session-config label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #374151;
+  min-width: 140px;
+}
+
+.session-config select,
+.session-config input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.session-config select:focus,
+.session-config input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.btn-generate {
+  padding: 10px 20px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.btn-generate:hover {
+  background: #059669;
+}
+
+.btn-generate:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.generated-slots {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+}
+
+.slot-list {
+  max-height: 120px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.slots-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.btn-clear-slots {
+  padding: 4px 8px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-clear-slots:hover {
+  background: #dc2626;
+}
+
+.slot-actions {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.btn-edit-slot,
+.btn-remove-slot {
+  padding: 2px 6px;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #374151;
+}
+
+.btn-edit-slot:hover {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+.btn-remove-slot:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.slot-option {
+  padding: 6px 12px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.slot-option:hover {
+  background: #dbeafe;
+  border-color: #3b82f6;
+}
+
+.slot-option.selected {
+  background: #3b82f6;
+  color: white;
+  border-color: #2563eb;
+}

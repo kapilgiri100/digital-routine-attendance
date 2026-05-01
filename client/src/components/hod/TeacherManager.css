@@ -1,0 +1,192 @@
+.teacher-manager {
+    padding: 20px
+}
+
+.teacher-manager h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #1f2937
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 12px
+}
+
+.form-row input {
+    flex: 1;
+    min-width: 160px;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-row input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.form-row button {
+    padding: 8px 16px;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.form-row button:hover {
+    background: #4338ca;
+}
+
+.form-row button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.item-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style: disc
+}
+
+.item-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    color: #111
+}
+
+.teacher-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.teacher-item:last-child {
+    border-bottom: none;
+}
+
+.teacher-info {
+    flex: 1;
+    font-size: 14px;
+}
+
+.teacher-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-edit {
+    padding: 6px 12px;
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-edit:hover {
+    background: #2563eb;
+}
+
+.btn-remove {
+    padding: 6px 12px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-remove:hover {
+    background: #dc2626;
+}
+
+.btn-edit:disabled,
+.btn-remove:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Edit Form */
+.edit-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    padding: 8px;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.edit-form input {
+    flex: 1;
+    min-width: 100px;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.edit-form input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-actions .btn-save {
+    padding: 6px 12px;
+    background: #10b981;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.edit-actions .btn-save:hover {
+    background: #059669;
+}
+
+.edit-actions .btn-cancel {
+    padding: 6px 12px;
+    background: #6b7280;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.edit-actions .btn-cancel:hover {
+    background: #4b5563;
+}
+
+.edit-actions button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+

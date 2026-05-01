@@ -1,0 +1,35 @@
+services:
+  - type: web_service
+    name: attendance-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      # IMPORTANT: Replace these values with your actual Render PostgreSQL credentials
+      # Get DATABASE_URL from: Render Dashboard → your-database → Info tab → External Database URL
+      - key: DATABASE_URL
+        value: "postgresql://postgres:YOUR_PASSWORD@dpg-XXXXXXXX-YYYY-US-EAST-1.RENDER.COM/YOUR_DB_NAME?sslmode=require"
+      
+      # IMPORTANT: Replace with a secure random string (use a UUID or random password generator)
+      - key: JWT_SECRET
+        value: "YOUR_SECURE_JWT_SECRET_MIN_32_CHARS"
+      
+      # IMPORTANT: Replace with your actual frontend URL from Render dashboard
+      - key: CLIENT_URL
+        value: "https://attendance-frontend.onrender.com"
+      
+      # Optional: Set to production for Render
+      - key: NODE_ENV
+        value: "production"
+
+  - type: static_site
+    name: attendance-frontend
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    publishPath: client/dist
+    envVars:
+      # IMPORTANT: Replace with your actual backend service URL from Render dashboard
+      # Example: https://attendance-backend.onrender.com/api
+      - key: VITE_API_URL
+        value: "https://attendance-backend.onrender.com/api"

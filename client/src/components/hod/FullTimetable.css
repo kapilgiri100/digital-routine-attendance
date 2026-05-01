@@ -1,0 +1,13 @@
+.full-timetable {
+    padding: 20px
+}
+
+.full-timetable h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #1f2937
+}
+
+.table-wrapper {
+    overflow-x: auto
+}
